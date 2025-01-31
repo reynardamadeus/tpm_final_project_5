@@ -18,10 +18,32 @@ class User extends Authenticatable
      * @var list<string>
      */
     protected $fillable = [
-        'name',
+        'full_name',
         'email',
         'password',
+        'whatsapp_number',
+        'line_id',
+        'github_id',
+        'birth_place',
+        'birth_date',
+        'cv_path',
+        'id_path',
     ];
+
+    public function team()
+    {
+        return $this->belongsTo(Teams::class);
+    }
+
+    public function isLeader()
+    {
+        return $this->role === 'team_leader';
+    }
+
+    public function isParticipant()
+    {
+        return $this->role === 'participant';
+    }
 
     /**
      * The attributes that should be hidden for serialization.

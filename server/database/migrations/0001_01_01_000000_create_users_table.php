@@ -11,15 +11,27 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
-        });
+        if(!Schema::hasTable('users')){
+
+            Schema::create('users', function (Blueprint $table) {
+                $table->id();
+                $table->timestamps();
+                $table->string('full_name');
+                $table->string('email')->unique();
+                $table->string('password')->unique();
+                $table->enum('role', ['participant', 'team_leader', 'admin'])->default('participant');
+                $table->string('team_name');
+                $table->string('whatsapp_number')->unique();
+                $table->string('line_id')->unique();
+                $table->string('github_id');
+                $table->string('birth_place');
+                $table->date('birth_date');
+                $table->string('cv_path');
+                $table->string('id_path');
+                $table->foreignId('team_id')->nullable()->onDelete('cascade');
+                $table->rememberToken();
+            });
+        }
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
