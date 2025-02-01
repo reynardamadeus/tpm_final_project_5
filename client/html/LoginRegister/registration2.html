@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: "PixelOperator";
+        src: url("PixelOperator.ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">TECHNOSCAPE</div>
+      <div class="login-box">
+        <div class="login-title">REGISTER</div>
+
+            <!-- fullname -->
+            <div class="input-group">
+                <label for="fullName" class="team-name">Full Name</label>
+                <input type="text" id="fullName" placeholder="Full Name" class="input-field">
+                <!-- <span id="fullNameError" class="error"></span> -->
+            </div>
+            
+            <!-- Email -->
+            <div class="input-group">
+                <label for="email" class="team-name">Email</label>
+                <input type="email" id="email" placeholder="Email" class="input-field">
+                <!-- <span id="emailError" class="error"></span> -->
+            </div>
+
+            <!-- No WA -->
+            <div class="input-group">
+                <label for="whatsapp" class="team-name">Whatsapp Number</label>
+                <input type="text" id="whatsapp" placeholder="Whatsapp Number" class="input-field">
+                <!-- <span id="whatsappError" class="error"></span> -->
+            </div>
+
+            <!-- ID Line -->
+            <div class="input-group">
+                <label for="line" class="team-name">Line ID</label>
+                <input type="text" id="line" placeholder="Line ID" class="input-field">
+                <!-- <span id="whatsappError" class="error"></span> -->
+            </div>
+
+            <!-- Github/Gitlab ID -->
+            <div class="input-group">
+                <label for="git" class="team-name">Github or Gitlab ID</label>
+                <input type="text" id="git" placeholder="Github or Gitlab ID" class="input-field">
+                <!-- <span id="whatsappError" class="error"></span> -->
+            </div>
+
+            <!-- Birth Place -->
+            <div class="input-group">
+                <label for="birthplace" class="team-name">Birth Place</label>
+                <input type="text" id="birthplace" placeholder="Birth Place" class="input-field">
+                <!-- <span id="whatsappError" class="error"></span> -->
+            </div>
+
+            <!-- Birth Date -->
+            <div class="input-group">
+                <label for="birthday" class="team-name">Birth Date</label>
+                <input type="date" id="birthday" placeholder="Birth Date" class="input-field">
+                <!-- <span id="whatsappError" class="error"></span> -->
+            </div>
+
+            <!-- Upload CV -->
+            <div class="input-group">
+                <label for="cv" class="team-name">Upload CV</label>
+                <label class="lower-name">(PDF, JPG, JPEG, or PNG)</label>
+                <input type="file" id="cv" name="cv" class="input-field" multiple>
+                <!-- <span id="whatsappError" class="error"></span> -->
+            </div>
+
+            <!-- Flazz Card / ID Card -->
+            <div class="input-group">
+                <label for="card" class="card-name">Binusian Flazz Card or ID Card</label>
+                <label class="lower-name">(PDF, JPG, JPEG, or PNG)</label>
+                <input type="file" id="card" name="card" class="input-field" multiple>
+                <!-- <span id="whatsappError" class="error"></span> -->
+            </div>
+
+        <button class="login-button" onclick="register()">register</button>
+        <div class="register-link">
+          <img
+            src="Register Page/Group 3.png"
+            alt="Register"
+            class="register-image"
+            id="registerImage"
+          />
+        </div>
+      
+    </div>
+
+    <script>
+        const registerImage = document.getElementById("registerImage");
+      registerImage.addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+
+      function register() {
+            // ... (validasi yang sudah ada)
+
+            const fullName = document.getElementById("fullName").value;
+            const email = document.getElementById("email").value;
+            const whatsapp = document.getElementById("whatsapp").value;
+            const line = document.getElementById("line").value;
+            const git = document.getElementById("git").value;
+            const birthplace = document.getElementById("birthplace").value;
+            const birthday = document.getElementById("birthday").value;
+            const cv = document.getElementById("cv").value;
+            const card = document.getElementById("card").value;
+            // ... (ambil nilai input lainnya)
+            
+            if (!fullName || !email || !whatsapp || !line || !git 
+            || !birthplace || !birthday || !cv || !card
+            ) {
+            alert("Semua field harus diisi.");
+            return;
+            }
+
+            // email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById("emailError").textContent = "Masukkan email yang valid";
+                return;
+            }
+
+            // WhatsApp
+            if (whatsapp.length < 9) {
+                document.getElementById("whatsappError").textContent = "Nomor WhatsApp minimal 9 digit";
+                return;
+            }
+
+          alert("Registrasi berhasil!");
+          window.location.href = "registration2.html";
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: "PixelOperator";
+        src: url("PixelOperator.ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img class="segi3-1" src="Login Page/segi3 dp 1.png"> -->
+      <div class="header">TECHNOSCAPE</div>
+      <div class="login-box">
+        <div class="login-title">You must be a </div>
+        <div class="login-title">team leader</div>
+        <div class="login-title">to register!</div>
+         
+        <div>
+            <button class="yesno-button" onclick="Register()">Go Back</button>
+        </div>
+        <div class="register-link">
+          <img
+            src="Register Page/Group 3.png"
+            alt="Register"
+            class="register-image"
+            id="registerImage"
+          />
+        </div>
+      
+    </div>
+
+    <script>
+      const registerImage = document.getElementById("registerImage");
+      registerImage.addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+
+      function Register() {
+        window.location.href = "registration.html";
+      }
+    </script>
+  </body>
+</html>

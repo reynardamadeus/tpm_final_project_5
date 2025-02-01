@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/AdminPanel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="admin-header">
+            <h1>Admin Panel</h1>
+            <button class="logout-btn">Logout</button>
+        </div>
+        
+        <div class="team-section">
+            <div class="team-header">
+                <h2>Team List</h2>
+                <div class="header-features">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search Teams...">
+                        <button class="search-btn"></button>
+                    </div>
+                    <div class="header-buttons">
+                        <button class="filter-btn">
+                            <i class="fa-solid fa-filter"></i>
+                            Filter
+                        </button>
+                        <div class="sort-container">
+                            <button class="sort-btn" id="sortBtn">
+                                <i class="fa-solid fa-arrow-down-a-z"></i>
+                                Sort
+                            </button>
+                            <div class="sort-dropdown" id="sortDropdown">
+                                <button class="sort-option" data-sort="name-asc">
+                                    <i class="fa-solid fa-arrow-up-z-a"></i>
+                                    Name (A-Z)
+                                </button>
+                                <button class="sort-option" data-sort="name-desc">
+                                    <i class="fa-solid fa-arrow-down-a-z"></i>
+                                    Name (Z-A)
+                                </button>
+                                <button class="sort-option" data-sort="date-asc">
+                                    <i class="fa-solid fa-arrow-up-9-1"></i>
+                                    Registration (Oldest)
+                                </button>
+                                <button class="sort-option" data-sort="date-desc">
+                                    <i class="fa-solid fa-arrow-down-1-9"></i>
+                                    Registration (Newest)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-grid" id="teamGrid">
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/AdminPanel.js"></script>
+    <script src="../js/Logout.js"></script>
+</body>
+</html>

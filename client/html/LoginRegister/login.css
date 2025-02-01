@@ -1,0 +1,111 @@
+body {
+  background: #28244e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "PixelOperator";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  background-color: #333;
+  color: #aad401;
+  padding: 30px;
+  border-radius: 100px 0px;
+  margin-bottom: 20px;
+  font-size: 5em;
+  flex-grow: 5;
+}
+
+.login-box {
+  background-color: #000;
+  border: 2px solid #cd204d;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px; /* Atur lebar login box */
+}
+
+.login-title {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.input-field {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 100%; /* Mengisi seluruh lebar input group */
+}
+
+.login-button {
+  background-color: #cd204d;
+  color: #180161;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: "PixelOperator";
+  font-size: 20px; /* Sesuaikan ukuran font */
+}
+
+.login-button:hover {
+  background-color: #28244e;
+}
+
+.register-link {
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.register-image {
+  width: 150px;
+  height: auto;
+  position: relative;
+  left: 100px;
+}
+
+.team-name,
+.password-label {
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,163 @@
+body {
+  background: #28244e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "PixelOperator";
+}
+
+.container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-grow: 8; */
+}
+
+.header {
+  background-color: #333;
+  color: #aad401;
+  /* padding-right: 30px;
+  padding-left: 30px;
+  padding: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px; */
+  padding: 30px;
+  border-radius: 100px 0px;
+  margin-bottom: 20px;
+  font-size: 5em;
+  flex-grow: 5;
+}
+
+.login-box {
+  background-color: #000;
+  border: 2px solid #cd204d;
+  padding: 30px;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250%;
+}
+
+.login-title {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* teks rata tengah */
+  width: 100%; /* Judul memenuhi lebar container */
+}
+
+.input-field {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 450px;
+}
+
+.yesno-button,
+.login-button {
+  background-color: #cd204d;
+  color: #180161;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: "PixelOperator";
+  font-size: 50px;
+}
+
+.yesno-button:hover,
+.login-button:hover {
+  background-color: #28244e;
+}
+
+.register-link {
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+  /* text-align: center; */
+}
+
+.register-image {
+  width: 250px;
+  height: auto;
+  position: relative;
+  left: 100px;
+}
+
+.team-name {
+  color: white;
+  text-align: left;
+  width: 100%;
+}
+
+.password-label {
+  color: white;
+  text-align: left;
+}
+
+/* Adsufndhdfbvshbgjshkbv */
+
+.input-group {
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+.team-name,
+.card-name,
+.lower-name,
+.password-label {
+  color: white;
+  /* text-align: left; */
+  margin-bottom: 5px;
+  display: block;
+  /* padding: 50px; */
+}
+
+.segi3-1 {
+  position: relative;
+  width: 100%;
+}
+
+/* .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+} */
+.card-name {
+  font-size: 35px;
+}
+
+.lower-name {
+  font-size: 20px;
+}
+
+.yesno-button {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.valid-box {
+  background-color: #000;
+  border: 2px solid #cd204d;
+  padding: 30px;
+  /* border-radius: 10px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150%;
+}

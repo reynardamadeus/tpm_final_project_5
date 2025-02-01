@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: "PixelOperator";
+        src: url("PixelOperator.ttf");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img class="segi3-1" src="Login Page/segi3 dp 1.png"> -->
+      <div class="header">TECHNOSCAPE</div>
+      <div class="login-box">
+        <div class="login-title">LOGIN</div>
+          <div class="input-group">  <label for="teamName" class="team-name">Team Name</label>
+            <input type="text" placeholder="Team Name" class="input-field" id="teamName">
+        </div>
+        <div class="input-group">  <label for="password" class="password-label">Password</label>
+          <input type="password" placeholder="Password" class="input-field" id="password">
+      </div>
+        <button class="login-button" onclick="login()">Login</button>
+        <div class="register-link">
+          <img
+            src="Login Page/Group 2.png"
+            alt="Register"
+            class="register-image"
+            id="registerImage"
+          />
+        </div>
+      
+    </div>
+
+    <script>
+      const registerImage = document.getElementById("registerImage");
+      registerImage.addEventListener("click", () => {
+        window.location.href = "registration.html";
+      });
+
+      function login() {
+        const teamName = document.getElementById("teamName").value;
+        const password = document.getElementById("password").value;
+
+        if (teamName === "test" && password === "test") {
+          alert("Login Berhasil!");
+          window.location.href = "index.html";
+        } else {
+          alert("Team Name atau Password salah!");
+        }
+      }
+
+      function login() {
+  const teamName = document.getElementById("teamName").value;
+  const password = document.getElementById("password").value;
+
+  if (!teamName) {
+    
+    alert("Team Name cannot be empty.");
+    return; 
+  }
+
+  if (!password) {
+    
+    alert("Password cannot be empty.");
+    return;
+  }
+
+  
+  if (teamName === "test" && password === "test") {
+    alert("Login Berhasil!");
+    window.location.href = "index.html";
+  } else {
+    alert("Team Name atau Password salah!");
+  }
+}
+    </script>
+  </body>
+</html>
