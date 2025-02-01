@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Teams extends Model
 {
-    protected $fillable = ['name', 'password'];
+    protected $fillable = ['name', 'password', 'leader_id'];
 
     public function leader()
     {

@@ -20,14 +20,14 @@ return new class extends Migration
                 $table->string('email')->unique();
                 $table->string('password')->unique();
                 $table->enum('role', ['participant', 'team_leader', 'admin'])->default('participant');
-                $table->string('team_name');
-                $table->string('whatsapp_number')->unique();
-                $table->string('line_id')->unique();
+                $table->string('whatsapp_number');
+                $table->string('line_id');
                 $table->string('github_id');
                 $table->string('birth_place');
                 $table->date('birth_date');
                 $table->string('cv_path');
                 $table->string('id_path');
+                $table->string('team_name')->nullable();
                 $table->foreignId('team_id')->nullable()->onDelete('cascade');
                 $table->rememberToken();
             });

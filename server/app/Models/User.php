@@ -22,12 +22,14 @@ class User extends Authenticatable
         'email',
         'password',
         'whatsapp_number',
+        'role',
         'line_id',
         'github_id',
         'birth_place',
         'birth_date',
         'cv_path',
         'id_path',
+        'team_name'
     ];
 
     public function team()

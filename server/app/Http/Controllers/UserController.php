@@ -61,6 +61,8 @@ class UserController extends Controller
             'team_password.min' => 'Team password must be at least 8 characters long.',
         ]);
 
+        // dd($request->all());
+       
         if (User::where('email', $request->email)->exists()) {
             return response()->json([
             'message' => 'Email already exists. Please choose another email .',
@@ -81,11 +83,14 @@ class UserController extends Controller
             $filename = $now.'_'.$request->file('id_path')->getClientOriginalName();
             $request->file('id_path')->storeAs('public', $filename);
 
-        $isTeamLeader = $request->input('is_team_leader') === 'yes';
+        $isTeamLeader = $request->input('is_team_leader') === 'yes' ? true : false;
 
         // If the user is a team leader
         if ($isTeamLeader) {
             $validated['password'] = bcrypt($validated['password']); // Encrypt password
+            //No need because we use team_id
+            // $validated['team_name'] = 'null';
+            $validated['role'] = 'team_leader';
             $user = User::create($validated);  
         
             $team = Teams::create([
@@ -95,7 +100,6 @@ class UserController extends Controller
             ]);
         
             $user->team_id = $team->id;
-            $user->role = 'team_leader';
             $user->save();
         
             return redirect()->route('login')->with('success', 'Registration successful!');
@@ -110,6 +114,7 @@ class UserController extends Controller
             }
         
             $validated['role'] = 'participant';
+            $validated['team_name'] = $team->name;
             $validated['team_id'] = $team->id;
             $validated['password'] = bcrypt($validated['password']); 
             $user = User::create($validated);
@@ -119,6 +124,10 @@ class UserController extends Controller
     }
 
     public function login(Request $request){
+        // cek admin
+
+
+
         $isTeamLeader = $request->input('is_team_leader') === 'yes';
 
         if ($isTeamLeader) {
