@@ -1,0 +1,1300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar{
+width: 20px;
+}
+    
+::-webkit-scrollbar-thumb{
+background-color: #EB3678;
+border-radius: 5px;
+}
+    
+::-webkit-scrollbar-track{
+background-color: #180161;
+border-radius: 5px;
+}
+
+body{
+    overflow-y: scroll;
+    margin: 0;
+    font-family:"Nunito", serif;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #180161;
+}
+
+.headbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F017E;
+    padding: 24px 30px;
+}
+
+
+.headbar .logo{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    left: 100px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+nav ul li a:hover{
+    color: #EB3678;
+}
+
+.login {
+    color: white;
+    background-color: #FB773C;
+    border: none;
+    padding: 11px 28px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px #FB773C;
+    position: relative;
+    right: 110px;
+    font-size: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.login:hover{
+    background-color: #fa8f5e;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.content .title .join{
+    background-color: #EB3678;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    box-shadow: 0 0 10px #EB3678;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.join:hover{
+    background-color: #e75289;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.content .title > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #9951E1;
+    text-shadow: 0 0 10px #EB3678;
+    font-size: 62px;
+}
+
+.content .title > p{
+    color: white;
+    font-size: 35px;
+}
+
+.content .hero1{
+    position: relative;
+    right: 545px;
+    bottom: 200px;
+}
+
+.content .hero2{
+    position: relative;
+    right: 550px;
+    bottom: 200px;
+}
+
+.content .hero3{
+    position: relative;
+    right: 670px;
+    top: 125px;
+}
+
+.content .hero4{
+    position: relative;
+    right: 675px;
+    top: 130px;
+}
+
+.content .imagering{
+    position: relative;
+    right: 192px;
+    bottom: 220px;
+}
+
+.content .back{
+    position: relative;
+    right: 1000px;
+    bottom: 220px;
+}
+
+.content .presentasion{
+    position: relative;
+    right: 1166px;
+    top: 10px;
+}
+
+.aboutus{
+    background-color: #9951E1;
+    height: 850px;
+    position: relative;
+}
+
+.aboutus .bot{
+    position: relative;
+    bottom: 220px;
+}
+
+.aboutus .arrow{
+    position: relative;
+    bottom: 110px;
+}
+
+.aboutus .arrow > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #9951E1;
+    text-shadow: 0 0 10px #EB3678;
+    position: relative;
+    z-index: 10;
+    left: 500px;
+    font-size: 44px;
+    top: 110px;
+}
+
+.arrow > p{
+    position: relative;
+    z-index: 20;
+    top: 140px;
+    text-align: center;
+}
+
+.aboutus .arrow .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 140px;
+}
+
+.aboutus .arrow .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 345px;
+    left: 10px;
+}
+
+.aboutus .arrow .btn > button{
+    background-color: #EB3678;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    box-shadow: 0 0 10px #EB3678;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.aboutus .arrow .btn > img{
+    position: relative;
+    right: 140px;
+}
+
+.prizes{
+    position: relative;
+    top: 15px;
+    height: 580px;
+}
+
+.prizes > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #9951E1;
+    text-shadow: 0 0 10px #EB3678;
+    font-size: 50px;
+    position: relative;
+    z-index: 10;
+}
+.prizes .square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+    z-index: 20;
+}
+
+.prizes .dec1{
+    position: relative;
+    bottom: 845px;
+    left: 710px;
+}
+
+.prizes .dec2{
+    position: relative;
+    bottom: 1370px;
+    right: 165px;
+}
+
+.prizes .dec3{
+    position: relative;
+    bottom: 2200px;
+    left: 610px;
+    z-index: -1;
+}
+
+.prizes > img{
+    position: relative;
+    bottom: 2630px;   
+}
+
+.penilai{
+    background-color: #4F1787;
+    height: 750px;
+}
+
+.penilai > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #EB3678;
+    font-size: 50px;
+    position: relative;
+    top: 160px;
+}
+
+.penilai > img{
+    position: relative;
+    bottom: 300px;
+}
+
+.penilai .rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    bottom: 780px;
+}
+
+.penilai .profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    position: relative;
+    bottom: 1100px;
+}
+
+.penilai .rectangle > img{
+    box-shadow: 0 0 10px black;
+}
+
+.penilai .nama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 204px;
+    position: relative;
+    bottom: 1100px;
+}
+
+.penilai .nama > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.penilai .caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 143px;
+    position: relative;
+    bottom: 1125px;
+}
+
+.penilai .caption > p{
+    text-align: center;
+}
+
+.pendamping{
+    background-color: #4F1787;
+    height: 800px;
+    position: relative;
+    bottom: 20px;
+}
+
+.pendamping > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #EB3678;
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.pendamping .rectangle1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    position: relative;
+}
+
+
+.pendamping .profil1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    position: relative;
+    bottom: 323px;
+    
+}
+
+.pendamping .nama1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+    bottom: 320px;
+    left: 2px;
+}
+
+.pendamping .nama1 > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.pendamping .caption1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 143px;
+    position: relative;
+    bottom: 350px;
+}
+
+.pendamping .caption1 > p{
+    text-align: center;
+}
+
+.pendamping .option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #FB773C;
+    position: relative;
+    bottom: 300px;
+    left: 280px;
+    gap: 100px;
+}
+
+.pendamping .option .item > a > img{
+    position: relative;
+    bottom: 10px;
+}
+
+.pendamping .option .item > h3{
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.pendamping > p{
+    position: relative;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bisnis{
+    position: relative;
+    bottom: 360px;
+    left: 425px;
+    color: #180161;
+}
+
+.design{
+    position: relative;
+    bottom: 393px;
+    left: 634px;
+    color: black;
+}
+
+.tech{
+    position: relative;
+    bottom: 424px;
+    left: 794px;
+    color: black;
+}
+
+.reason{
+    background-color: #FA5105;
+    position: relative;
+    bottom: 60px;
+    height: 860px;
+}
+
+.reason .boxtitle{
+    width: 500px;
+    height: 400px;
+    background: #FB773C;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.reason .boxtitle > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #9951E1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    font-size: 50px;
+}
+
+.reason .boxskill{
+    height: 400px;
+    width: 793px;
+    background-color: #FB773C;
+    position: relative;
+    left: 536px;
+    bottom: 407px;
+}
+
+.reason .boxskill > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    font-size: 28px;
+}
+
+.reason .boxskill > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    position: relative;
+    top: 120px;
+    color: #333333;
+}
+
+.reason .boxnetdanporto{
+    background-color: #FB773C;
+    height: 400px;
+    width: 820px;
+    position: relative;
+    left: 15px;
+    bottom: 410px;
+}
+
+.reason .boxnetdanporto > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    position: relative;
+    left: 60px;
+    top: 60px;
+}
+
+.reason .boxnetdanporto > p{
+    position: relative;
+    left: 60px;
+    top: 60px;
+    color: #333333;
+    font-size: 22px;
+}
+
+.reason .boxmentoring{
+    background-color: #FB773C;
+    height: 400px;
+    width: 475px;
+    position: relative;
+    left: 855px;
+    bottom: 830px;
+}
+
+.reason .boxmentoring > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+    font-size: 28px;
+}
+
+.reason .boxmentoring > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    position: relative;
+    top: 120px;
+    color: #333333;
+    text-align: center;
+}
+
+.time{
+    position: relative;
+    height: 1085px;
+    background-color: #180161;
+}
+
+.time > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #9951E1;
+    text-shadow: 0 0 10px #EB3678;
+    font-size: 50px;
+}
+
+.event > img{
+    position: relative;
+    left: 48%;
+}
+
+.eventleft{
+    position: relative;
+    bottom: 910px;
+    left: 270px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.eventleft > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.eventlef{
+    position: relative;
+    bottom: 1050px;
+    left: 320px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.eventlef > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+.logoleft{
+    position: relative;
+    bottom: 1010px;
+    left: 450px;
+}
+
+.logolef{
+    position: relative;
+    bottom: 1150px;
+    left: 450px;
+}
+
+.logoright{
+    position: relative;
+    bottom: 1080px;
+    left: 750px;
+}
+
+.eventright{
+    position: relative;
+    bottom: 1190px;
+    left: 750px;
+    color: #FB773C;
+    font-size: 20px;
+}
+
+.eventright > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logorigh{
+    position: relative;
+    bottom: 1240px;
+    left: 750px;
+}
+
+.eventrigh{
+    position: relative;
+    bottom: 1310px;
+    left: 750px;
+    color: #FB773C;
+    font-size: 20px;
+}
+
+.eventrigh > h2{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dec1, .dec2, .dec3{
+    margin: 0;
+}
+
+.deco1{
+    position: relative;
+    bottom: 2150px;
+    left: 20px;
+}
+
+.deco2{
+    position: relative;
+    bottom: 2600px;
+    left: 1050px;
+}
+
+.deco3{
+    position: relative;
+    bottom: 2580px;
+    left: 1000px;
+}
+
+.sep > img{
+    position: relative;
+    top: 260px;
+    right: 1000px;
+}
+
+.faq{
+    background-color: #4F1787;
+    height: 1190px;
+}
+
+.faq > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #EB3678;
+    text-align: center;
+    position: relative;
+    top: 130px;
+    font-size: 52px;
+    z-index: 20;
+}
+
+.question{
+    background-color: black;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    padding: 25px 25px 10px 25px;
+    box-shadow: 0 0 10px white; 
+    position: relative;
+    bottom: 690px;
+    z-index: 10;
+}
+
+.dropdown {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid white;
+}
+
+.dropdown-btn {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+.more-questions {
+    margin-top: 30px;
+    font-size: 23px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+.more-questions:hover{
+    color: #9951E1;
+}
+
+.chat1 > img{
+    position: relative;
+    bottom: 230px;
+    left: 180px;
+    width: 350px;
+    height: auto; 
+}
+
+.chat2{
+    position: relative;
+    bottom: 480px;
+    left: 940px;
+}
+
+.chat3{
+    position: relative;
+    bottom: 570px;
+    left: 100px;
+}
+
+.chat5{
+    position: relative;
+    bottom: 1000px;
+    left: 70px;
+}
+
+.chat4{
+    position: relative;
+    bottom: 1080px;
+    left: 990px;
+}
+
+.bot{
+    position: relative;
+    bottom: 1150px;
+}
+
+.sponsor{
+    height: 1000px;
+    background-color: #180161;
+}
+
+.sponsor > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #EB3678;
+    text-align: center;
+    position: relative;
+    font-size: 52px;
+    top: 10px;
+    z-index: 20;
+}
+
+.consol{
+    position: relative;
+    bottom: 260px;
+    left: 190px;
+}
+.consol1{
+    position: relative;
+    bottom: 210px;
+    left: 667px;
+}
+
+.plat{
+    width: 100%;
+    background-color: white;
+    height: 350px;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    position: relative;
+    bottom: 380px;
+    padding: 5px 25px;
+}
+
+.gold{
+    width: 100%;
+    background-color: #EFBF04;
+    height: 280px;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    position: relative;
+    bottom: 380px;
+    padding: 5px 25px;
+}
+
+.sil{
+    width: 100%;
+    background-color: white;
+    height: 230px;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    position: relative;
+    bottom: 380px;
+    padding: 5px 25px;
+}
+
+.tl{
+    position: relative;
+    bottom: 320px;
+    z-index: 30;
+}
+
+.medpar{
+    background-color: #4F1787;
+    height: 770px;
+    position: relative;
+    z-index: 10;
+}
+
+.medpar > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #EB3678;
+    text-align: center;
+    position: relative;
+    font-size: 52px;
+    top: 150px;
+    z-index: 10;
+}
+
+.laptop{
+    position: relative;
+    left: 820px;
+    bottom: 180px;
+}
+
+.container1{
+    display: flex;
+    gap: 35px;
+    position: relative;
+    bottom: 370px;
+}
+
+.box{
+    background-color: #9951E1;
+    width: 400px;
+    height: 150px;
+}
+
+.box > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #CCCCCC;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+}
+
+.container2{
+    display: flex;
+    gap: 35px;
+    position: relative;
+    bottom: 330px;
+    left: 78px;
+}
+
+.box1{
+    background-color: #9951E1;
+    width: 400px;
+    height: 150px;
+}
+
+.box1 > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #CCCCCC;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+}
+
+.botsep{
+    position: relative;
+    bottom: 280px;
+}
+
+.folow{
+    height: 350px;
+    background-color: #180161;
+    min-height: auto; 
+    height: auto;
+    position: relative;
+}
+
+.segi6{
+    position: relative;
+    top: -620px;
+    left: 610px;
+}
+
+.segi5{
+    position: relative;
+    top: 210px;
+    left: -200px;
+}
+
+.terakhir{
+    position: relative;
+    top: -1120px;
+    z-index: 40;
+}
+
+.segi7{
+    position: relative;
+    bottom: 300px;
+    z-index: 0;
+}
+
+.segi4{
+    position: relative;
+    bottom: 610px;
+    left: 910px;
+}
+
+.bintang{
+    position: relative;
+    bottom: 1530px;
+    right: 780px;
+}
+
+.bintangmiring{
+    position: relative;
+    bottom: 1620px;
+    left: 830px;
+}
+
+.linkedin{
+    position: relative;
+    bottom: 1420px;
+    right: 500px;
+    z-index: 40;
+}
+
+.linkedin:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.menang{
+    position: relative;
+    bottom: 1410px;
+    left: -270px;
+}
+
+.menang:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.x{
+    position: relative;
+    bottom: 1440px;
+    left: 30px;
+    z-index: 40;
+}
+
+.x:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.bintang1{
+    position: absolute;
+    bottom: 1810px;
+    left: 650px;
+}
+
+.text-container{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 46px;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    bottom: 1440px;
+}
+
+.red{
+    color: #EB3678;
+}
+
+.yellow{
+    color: #FB773C;
+}
+
+.segi5{
+    position: absolute;
+    right: 280px;
+    bottom: 1400px;
+}
+
+.surat{
+    position: absolute;
+    right: 1070px;
+    bottom: 1450px;
+}
+
+.logosurat:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.ig{
+    position: absolute;
+    right: 630px;
+    bottom: 1430px;
+    z-index: 40;
+}
+
+.logoig:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.meta{
+    position: absolute;
+    left: 1100px;
+    bottom: 1450px;
+    z-index: 40;
+}
+
+.logometa:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+
+.cu{
+    background-color: #4F1787;
+    height: 1260px;
+    position: relative;
+    z-index: 10;
+    margin-top: -1260px;
+}
+
+.kaleng{
+    position: relative;
+    left: 50px;
+    top: 250px;
+}
+
+.kaleng1{
+    position: relative;
+    left: 840px;
+    top: 220px;
+}
+
+.kaleng2{
+    position: relative;
+    top: 560px;
+    right: 320px;
+}
+
+.kaleng3{
+    position: relative;
+    top: 600px;
+    left: 450px;
+}
+
+.tabel{
+    background-color: #FB773C;
+    width: 50%;
+    height: 730px;
+    margin: 50px auto;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px black;
+    position: relative;
+    bottom: 170px;
+}
+
+.tabel > h1{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+input, textarea {
+    width: 610px;
+    height: 50px;
+    margin: 10px 10px;
+    border: none;
+    font-size: 18px;
+    border: 3px solid #180161;
+    box-shadow: 0 0 5px black;
+    background-color: #FB773C;
+    color: black;
+    padding: 0 10px;
+}
+
+#message{
+    height: 150px;
+    resize: vertical;
+    font-size: 18px;
+    padding: 10px;
+}
+
+label{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    padding: 10px;
+}
+
+.send-btn{
+    border-radius: 35px;
+    background-color: #CD204D;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1D1A3A;
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.s{
+    color: #990000;
+    font-weight: bold;
+}
+
+.garis{
+    position: relative;
+    left: 20px;
+    width: 1300px;
+    top: 110px;
+}
+
+.footer > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.pow{
+    color: #FFFFFF;
+    font-size: 24px;
+    top: 110px;
+}
+
+
+.pp{
+    color: #CCCCCC;
+    position: relative;
+    top: 110px;
+}
+
+.footer{
+    position: relative;
+    bottom: 190px;
+    width: 100%;
+}
